@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		F14C739128DB3EC80052019C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14C739028DB3EC80052019C /* main.cpp */; };
+		F158AD53291E400E0034CEF4 /* tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F158AD51291E400E0034CEF4 /* tree.cpp */; };
+		F158AD56291E402D0034CEF4 /* line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F158AD54291E402D0034CEF4 /* line.cpp */; };
+		F158AD59291E403A0034CEF4 /* forest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F158AD57291E403A0034CEF4 /* forest.cpp */; };
+		F158AD5C291E40500034CEF4 /* text_ops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F158AD5A291E40500034CEF4 /* text_ops.cpp */; };
+		F158AD5F291E40640034CEF4 /* console_ops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F158AD5D291E40640034CEF4 /* console_ops.cpp */; };
+		F158AD62291E40830034CEF4 /* menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F158AD60291E40830034CEF4 /* menu.cpp */; };
+		F158AD65291E40960034CEF4 /* keyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F158AD63291E40960034CEF4 /* keyboard.cpp */; };
+		F158AD68291E40C40034CEF4 /* file_ops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F158AD66291E40C40034CEF4 /* file_ops.cpp */; };
+		F158AD6B291E7E080034CEF4 /* unit_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F158AD69291E7E080034CEF4 /* unit_tests.cpp */; };
+		F1958A28291C2D5200CE7A3C /* read_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1958A26291C2D5200CE7A3C /* read_file.cpp */; };
+		F1958A2C291C372000CE7A3C /* test_read_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1958A2A291C372000CE7A3C /* test_read_file.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +36,28 @@
 /* Begin PBXFileReference section */
 		F14C738D28DB3EC80052019C /* SampleAppConsole */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SampleAppConsole; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14C739028DB3EC80052019C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F158AD51291E400E0034CEF4 /* tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tree.cpp; sourceTree = "<group>"; };
+		F158AD52291E400E0034CEF4 /* tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tree.hpp; sourceTree = "<group>"; };
+		F158AD54291E402D0034CEF4 /* line.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = line.cpp; sourceTree = "<group>"; };
+		F158AD55291E402D0034CEF4 /* line.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = line.hpp; sourceTree = "<group>"; };
+		F158AD57291E403A0034CEF4 /* forest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = forest.cpp; sourceTree = "<group>"; };
+		F158AD58291E403A0034CEF4 /* forest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = forest.hpp; sourceTree = "<group>"; };
+		F158AD5A291E40500034CEF4 /* text_ops.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = text_ops.cpp; sourceTree = "<group>"; };
+		F158AD5B291E40500034CEF4 /* text_ops.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = text_ops.hpp; sourceTree = "<group>"; };
+		F158AD5D291E40640034CEF4 /* console_ops.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = console_ops.cpp; sourceTree = "<group>"; };
+		F158AD5E291E40640034CEF4 /* console_ops.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = console_ops.hpp; sourceTree = "<group>"; };
+		F158AD60291E40830034CEF4 /* menu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = menu.cpp; sourceTree = "<group>"; };
+		F158AD61291E40830034CEF4 /* menu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = menu.hpp; sourceTree = "<group>"; };
+		F158AD63291E40960034CEF4 /* keyboard.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = keyboard.cpp; sourceTree = "<group>"; };
+		F158AD64291E40960034CEF4 /* keyboard.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = keyboard.hpp; sourceTree = "<group>"; };
+		F158AD66291E40C40034CEF4 /* file_ops.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = file_ops.cpp; sourceTree = "<group>"; };
+		F158AD67291E40C40034CEF4 /* file_ops.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = file_ops.hpp; sourceTree = "<group>"; };
+		F158AD69291E7E080034CEF4 /* unit_tests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unit_tests.cpp; sourceTree = "<group>"; };
+		F158AD6A291E7E080034CEF4 /* unit_tests.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = unit_tests.hpp; sourceTree = "<group>"; };
+		F1958A26291C2D5200CE7A3C /* read_file.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = read_file.cpp; sourceTree = "<group>"; };
+		F1958A27291C2D5200CE7A3C /* read_file.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = read_file.hpp; sourceTree = "<group>"; };
+		F1958A2A291C372000CE7A3C /* test_read_file.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_read_file.cpp; sourceTree = "<group>"; };
+		F1958A2B291C372000CE7A3C /* test_read_file.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = test_read_file.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +74,7 @@
 		F14C738428DB3EC80052019C = {
 			isa = PBXGroup;
 			children = (
+				F1958A29291C36E100CE7A3C /* unit_tests */,
 				F14C738F28DB3EC80052019C /* SampleAppConsole */,
 				F14C738E28DB3EC80052019C /* Products */,
 			);
@@ -57,9 +91,38 @@
 		F14C738F28DB3EC80052019C /* SampleAppConsole */ = {
 			isa = PBXGroup;
 			children = (
+				F158AD5D291E40640034CEF4 /* console_ops.cpp */,
+				F158AD5E291E40640034CEF4 /* console_ops.hpp */,
+				F158AD57291E403A0034CEF4 /* forest.cpp */,
+				F158AD58291E403A0034CEF4 /* forest.hpp */,
+				F158AD63291E40960034CEF4 /* keyboard.cpp */,
+				F158AD64291E40960034CEF4 /* keyboard.hpp */,
+				F158AD54291E402D0034CEF4 /* line.cpp */,
+				F158AD55291E402D0034CEF4 /* line.hpp */,
 				F14C739028DB3EC80052019C /* main.cpp */,
+				F158AD60291E40830034CEF4 /* menu.cpp */,
+				F158AD61291E40830034CEF4 /* menu.hpp */,
+				F1958A26291C2D5200CE7A3C /* read_file.cpp */,
+				F1958A27291C2D5200CE7A3C /* read_file.hpp */,
+				F158AD5A291E40500034CEF4 /* text_ops.cpp */,
+				F158AD5B291E40500034CEF4 /* text_ops.hpp */,
+				F158AD51291E400E0034CEF4 /* tree.cpp */,
+				F158AD52291E400E0034CEF4 /* tree.hpp */,
+				F158AD66291E40C40034CEF4 /* file_ops.cpp */,
+				F158AD67291E40C40034CEF4 /* file_ops.hpp */,
 			);
 			path = SampleAppConsole;
+			sourceTree = "<group>";
+		};
+		F1958A29291C36E100CE7A3C /* unit_tests */ = {
+			isa = PBXGroup;
+			children = (
+				F1958A2A291C372000CE7A3C /* test_read_file.cpp */,
+				F1958A2B291C372000CE7A3C /* test_read_file.hpp */,
+				F158AD69291E7E080034CEF4 /* unit_tests.cpp */,
+				F158AD6A291E7E080034CEF4 /* unit_tests.hpp */,
+			);
+			path = unit_tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +182,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F158AD65291E40960034CEF4 /* keyboard.cpp in Sources */,
 				F14C739128DB3EC80052019C /* main.cpp in Sources */,
+				F158AD53291E400E0034CEF4 /* tree.cpp in Sources */,
+				F158AD62291E40830034CEF4 /* menu.cpp in Sources */,
+				F1958A2C291C372000CE7A3C /* test_read_file.cpp in Sources */,
+				F158AD68291E40C40034CEF4 /* file_ops.cpp in Sources */,
+				F158AD5C291E40500034CEF4 /* text_ops.cpp in Sources */,
+				F158AD5F291E40640034CEF4 /* console_ops.cpp in Sources */,
+				F158AD56291E402D0034CEF4 /* line.cpp in Sources */,
+				F158AD6B291E7E080034CEF4 /* unit_tests.cpp in Sources */,
+				F158AD59291E403A0034CEF4 /* forest.cpp in Sources */,
+				F1958A28291C2D5200CE7A3C /* read_file.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
