@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "45CB0FDF-19DE-4C04-8CC9-30D1609E5542"
-            shouldBeEnabled = "Yes"
+            uuid = "8E3E5F45-2286-44CB-BE5C-87C16CC63327"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "unit_tests/unit_tests.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "run_all_tests()"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "test_parsing_lines()"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>

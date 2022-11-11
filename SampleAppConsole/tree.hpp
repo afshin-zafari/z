@@ -13,6 +13,7 @@
 #include <vector>
 #include <string>
 #include "line.hpp"
+#include "text_ops.hpp"
 
 using namespace std;
 
@@ -36,6 +37,7 @@ private:
     
 public:
     void add_line(string line);
+    unsigned long get_line_count();
     
 };
 #endif /* tree_hpp */

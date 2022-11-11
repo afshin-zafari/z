@@ -1,0 +1,6 @@
+git
+    rebase
+            interactive : -i
+            branch main master : main
+            remote origin: origin
+            upstream ups: upstream

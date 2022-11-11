@@ -17,7 +17,7 @@ private:
     int _line_no_in_tree;
     int _indent_no;
 public:
-    Line(string text):_text(text){}
+    Line(string text, string trans):_text(text), _translation(trans){}
     
 };
 #endif /* line_hpp */
