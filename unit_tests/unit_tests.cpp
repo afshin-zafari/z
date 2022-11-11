@@ -25,16 +25,27 @@ int test_parsing_lines()
     return 0;
 }
 int test_indent_no(){
-    return 1;
+    FileManager fm;
+    Tree t;
+    fm.read_file_to_tree(t,Config::default_folder + "/test_input_file.txt");
+    ASSERT_TRUE(t.get_line_count() != 0, "error");
+    return 0;
 }
-int test_line_no(){
-    return 1;
+int test_search(){
+    FileManager fm;
+    Tree t;
+    fm.read_file_to_tree(t,Config::default_folder + "/test_input_file.txt");
+    ASSERT_TRUE(t.get_line_count() != 0, "error");
+    t.search("origin");
+    t.search("main");
+    auto s = t.get_path_to_found();
+    printf("%s", s.c_str());
+    return 0;
 }
 int run_all_tests(){
     RUN_TEST(test_read_file);
     RUN_TEST(test_parsing_lines);
     RUN_TEST(test_indent_no);
-    RUN_TEST(test_line_no);
+    RUN_TEST(test_search);
     return 0;
-
 }

@@ -16,5 +16,7 @@ using namespace std;
 class Text{
 public:
     static vector<string> split(string str, char sep);
+    static int left_ws_count(string str);
+    static void left_trim(string &text);
 };
 #endif /* text_ops_hpp */

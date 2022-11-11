@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <vector>
 #include <string>
+#include <algorithm>
 #include "line.hpp"
 #include "text_ops.hpp"
 
@@ -38,6 +39,9 @@ private:
 public:
     void add_line(string line);
     unsigned long get_line_count();
+    void search( string word);
+    string get_path_to_found();
+    string get_original_line(int line_no);
     
 };
 #endif /* tree_hpp */

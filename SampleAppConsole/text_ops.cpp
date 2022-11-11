@@ -23,6 +23,25 @@ vector<string> Text:: split(string str, char splitter){
         result.push_back(current);
     return result;
 }
+int Text::left_ws_count(string str){
+    int count = 0;
+    for(int i=0; i< str.size(); i++){
+        if(str[i] == ' '){
+            count++;
+        } else if(str[i] == '\t' ){
+            count += 4;
+        }
+        else
+            break;
+    }
+    return count;    
+}
+void Text::left_trim(string &s) {
+    s.erase(s.begin(), find_if(s.begin(), s.end(), [](unsigned char ch) {
+        return !isspace(ch);
+    }));
+}
+
 void test()
 {
     // insert code here...
