@@ -53,7 +53,8 @@ int test_search_forest(){
     FileManager fm;
     Forest f;
     fm.read_file_to_forest(f, Config::default_folder + "/test_input_file.txt");
-    f.search("main");
+    f.dump();
+    f.search("lay");
     string s= f.get_path_to_found();
     printf("%s", s.c_str());
     return 0;

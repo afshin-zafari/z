@@ -41,7 +41,9 @@ void Text::left_trim(string &s) {
         return !isspace(ch);
     }));
 }
-
+bool Text::contains(string text, char c){
+    return text.find(c) != string::npos;
+}
 void test()
 {
     // insert code here...

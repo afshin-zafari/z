@@ -18,6 +18,7 @@ public:
     static vector<string> split(string str, char sep);
     static int left_ws_count(string str);
     static void left_trim(string &text);
+    static bool contains(string text, char c);
 };
 void test();
 #endif /* text_ops_hpp */

@@ -46,6 +46,9 @@ public:
     void search( string word);
     string get_path_to_found();
     string get_original_line(int line_no);
+    void dump();
+    void mark_as_found(int line_no, string word);
+    int get_parent_line(int line_no);
     
 };
 #endif /* tree_hpp */

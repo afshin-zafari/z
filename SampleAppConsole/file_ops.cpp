@@ -31,6 +31,8 @@ int FileManager::read_file_to_forest(Forest &forest, string filename){
     Tree *tree = nullptr;
     int line_no =0 ;
     while(getline(file, line)){
+        if (line.size() == 0 )
+            continue;
         int indent = Text::left_ws_count(line);
         if (indent ==  0){
             tree = new Tree();
