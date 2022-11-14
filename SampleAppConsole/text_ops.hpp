@@ -19,4 +19,5 @@ public:
     static int left_ws_count(string str);
     static void left_trim(string &text);
 };
+void test();
 #endif /* text_ops_hpp */

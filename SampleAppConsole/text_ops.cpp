@@ -45,9 +45,11 @@ void Text::left_trim(string &s) {
 void test()
 {
     // insert code here...
+    /*
     printf("\x1B[31mTexting");
     printf("\033[0m\t\t");
     printf("\033[3;42;30mTexting\033[0m\t\t");
+     */
     
     printf("\n");
     printf("\x1B[31mTexting\033[0m\t\t");

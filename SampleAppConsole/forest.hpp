@@ -9,5 +9,19 @@
 #define forest_hpp
 
 #include <stdio.h>
+#include <vector>
+#include "tree.hpp"
 
+using namespace std;
+
+class Forest{
+public:
+    vector<Tree*> trees;
+    ~Forest(){
+        for(auto t: trees)
+            delete t;
+    }
+    void search(string word);
+    string get_path_to_found();
+};
 #endif /* forest_hpp */

@@ -13,12 +13,14 @@
 #include <string>
 
 #include "tree.hpp"
+#include "forest.hpp"
+#include "text_ops.hpp"
 
 using namespace std;
 class FileManager{
 public:
     int read_file_to_tree(Tree &tree, string filename);
-    
+    int read_file_to_forest(Forest &f, string filename);
     
     
 };

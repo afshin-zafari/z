@@ -35,8 +35,12 @@ private:
     vector<Line> _lines;
     vector<Result> _results;
     int tree_no_in_forest;
+    string base_filename;
+    int from_line_in_file;
     
 public:
+    void set_filename(string f){base_filename = f;}
+    void set_start_line(int line_no) { from_line_in_file = line_no;}
     void add_line(string line);
     unsigned long get_line_count();
     void search( string word);

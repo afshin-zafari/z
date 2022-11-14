@@ -7,6 +7,7 @@
 
 #include "unit_tests.hpp"
 #include "file_ops.hpp"
+#include "text_ops.hpp"
 #include "config.hpp"
 
 int test_read_file(){
@@ -42,10 +43,27 @@ int test_search(){
     printf("%s", s.c_str());
     return 0;
 }
+int test_read_forest(){
+    FileManager fm;
+    Forest f;
+    fm.read_file_to_forest(f, Config::default_folder + "/test_input_file.txt");
+    return 0;
+}
+int test_search_forest(){
+    FileManager fm;
+    Forest f;
+    fm.read_file_to_forest(f, Config::default_folder + "/test_input_file.txt");
+    f.search("main");
+    string s= f.get_path_to_found();
+    printf("%s", s.c_str());
+    return 0;
+}
 int run_all_tests(){
     RUN_TEST(test_read_file);
     RUN_TEST(test_parsing_lines);
     RUN_TEST(test_indent_no);
     RUN_TEST(test_search);
+    RUN_TEST(test_read_forest);
+    RUN_TEST(test_search_forest);
     return 0;
 }

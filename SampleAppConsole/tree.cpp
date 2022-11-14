@@ -6,6 +6,7 @@
 //
 
 #include "tree.hpp"
+#include "console_ops.hpp"
 
 void Tree::add_line(string line){
     auto    sections    = Text::split(line, ':');
@@ -25,11 +26,11 @@ unsigned long  Tree::get_line_count(){
 void Tree::search(string word){
     for( auto &line : _lines){
         for(auto &w: line.Text()){
-            if ( w== word){
+            if (w == word){
                 Result r;
                 r.line_no = line.get_line_no();
                 r.search_text = w;
-                w = "*" + w + "*";
+                w = '*' + w + '*';//Console::blinking(w);
                 _results.push_back(r);
             }
         }
@@ -37,13 +38,15 @@ void Tree::search(string word){
 }
 string Tree::get_path_to_found(){
     string result;
-    if ( _results.size() == 0 )
+    if (_results.size() == 0)
         return result;
     auto  last_line_ptr = max_element(_results.begin(), _results.end(), [](Result &a, Result &b){return a.line_no< b.line_no;});
-    if ( last_line_ptr == _results.end() )
+    if (last_line_ptr == _results.end())
         return result;
-    for( int i =0 ; i <= last_line_ptr->line_no; i++){
-        result += get_original_line(i);
+    for(int i = last_line_ptr->line_no; i >=0; i--){
+        result = get_original_line(i) + result ;
+        if (_lines[i].get_indent_no() == 0) \
+            break;
     }
     return result;
 }
