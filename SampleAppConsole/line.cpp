@@ -23,7 +23,7 @@ void Line::remove_synonym_marks(){
     }
 }
 void Line::dump(){
-    printf("%d, %d, %d, %d ", _line_no_in_tree, _indent_no, (int)_is_synonym, _parent_line_no);
+    printf("%3d, %2d, %d, %3d ", _line_no_in_tree, _indent_no, (int)_is_synonym, _parent_line_no);
     for(auto word: _text){
         printf("%s ",word.c_str());
     }

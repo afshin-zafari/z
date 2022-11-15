@@ -6,6 +6,7 @@
 //
 
 #include "text_ops.hpp"
+
 vector<string> Text:: split(string str, char splitter){
     vector<string> result;
     string current = "";
@@ -43,6 +44,10 @@ void Text::left_trim(string &s) {
 }
 bool Text::contains(string text, char c){
     return text.find(c) != string::npos;
+}
+string Text::to_lower(string text){
+    std::transform(text.begin(), text.end(), text.begin(), [](unsigned char c){return tolower(c);});
+    return text;
 }
 void test()
 {

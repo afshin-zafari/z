@@ -15,7 +15,7 @@ using namespace std;
 
 class Console{
 public:
-    static enum Colors{
+    enum Colors{
         black = 30,
         red=31,
         green=32,

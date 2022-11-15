@@ -8,9 +8,12 @@
 #ifndef text_ops_hpp
 #define text_ops_hpp
 
+#include <algorithm>
+#include <cctype>
 #include <stdio.h>
-#include <vector>
 #include <string>
+#include <vector>
+
 using namespace std;
 
 class Text{
@@ -19,6 +22,7 @@ public:
     static int left_ws_count(string str);
     static void left_trim(string &text);
     static bool contains(string text, char c);
+    static string to_lower(string text);
 };
 void test();
 #endif /* text_ops_hpp */

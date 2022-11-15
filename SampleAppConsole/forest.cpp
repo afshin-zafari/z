@@ -22,6 +22,15 @@ string Forest::get_path_to_found(){
 }
 void Forest::dump(){
     for(auto t: trees){
+        printf("-----------------------------------\n");
         t->dump();
     }
+    printf("-----------------------------------\n");
+}
+string Forest::get_translation_for_found_items(){
+    string result;
+    for(auto tree: trees){
+        result += tree->get_translation_for_found_items();
+    }
+    return result;
 }

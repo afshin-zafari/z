@@ -39,11 +39,22 @@ int FileManager::read_file_to_forest(Forest &forest, string filename){
             forest.trees.push_back(tree);
             tree->set_filename(filename);
             tree->set_start_line(line_no);
+            tree->set_tree_no_in_forest((int)forest.trees.size());
         }
         if (tree != nullptr)
             tree->add_line(line);
         line_no++;
     }
     file.close();
+    return 0;
+}
+int FileManager::read_folder_to_forest(Forest &f, string folder_name){
+    using Path = std::filesystem::path;
+    Path input_folder(folder_name);
+    for(auto folder: filesystem::recursive_directory_iterator(input_folder)){
+        if (folder.is_regular_file()){
+            read_file_to_forest(f, folder.path().string());
+        }
+    }
     return 0;
 }

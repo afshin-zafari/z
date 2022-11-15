@@ -19,7 +19,6 @@
 		F158AD6B291E7E080034CEF4 /* unit_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F158AD69291E7E080034CEF4 /* unit_tests.cpp */; };
 		F158AD6E291EA56D0034CEF4 /* config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F158AD6C291EA56D0034CEF4 /* config.cpp */; };
 		F1958A28291C2D5200CE7A3C /* read_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1958A26291C2D5200CE7A3C /* read_file.cpp */; };
-		F1958A2C291C372000CE7A3C /* test_read_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1958A2A291C372000CE7A3C /* test_read_file.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,8 +58,6 @@
 		F158AD6D291EA56D0034CEF4 /* config.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = config.hpp; sourceTree = "<group>"; };
 		F1958A26291C2D5200CE7A3C /* read_file.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = read_file.cpp; sourceTree = "<group>"; };
 		F1958A27291C2D5200CE7A3C /* read_file.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = read_file.hpp; sourceTree = "<group>"; };
-		F1958A2A291C372000CE7A3C /* test_read_file.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_read_file.cpp; sourceTree = "<group>"; };
-		F1958A2B291C372000CE7A3C /* test_read_file.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = test_read_file.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +91,12 @@
 		F14C738F28DB3EC80052019C /* SampleAppConsole */ = {
 			isa = PBXGroup;
 			children = (
+				F158AD6C291EA56D0034CEF4 /* config.cpp */,
+				F158AD6D291EA56D0034CEF4 /* config.hpp */,
 				F158AD5D291E40640034CEF4 /* console_ops.cpp */,
 				F158AD5E291E40640034CEF4 /* console_ops.hpp */,
+				F158AD66291E40C40034CEF4 /* file_ops.cpp */,
+				F158AD67291E40C40034CEF4 /* file_ops.hpp */,
 				F158AD57291E403A0034CEF4 /* forest.cpp */,
 				F158AD58291E403A0034CEF4 /* forest.hpp */,
 				F158AD63291E40960034CEF4 /* keyboard.cpp */,
@@ -111,10 +112,6 @@
 				F158AD5B291E40500034CEF4 /* text_ops.hpp */,
 				F158AD51291E400E0034CEF4 /* tree.cpp */,
 				F158AD52291E400E0034CEF4 /* tree.hpp */,
-				F158AD66291E40C40034CEF4 /* file_ops.cpp */,
-				F158AD67291E40C40034CEF4 /* file_ops.hpp */,
-				F158AD6C291EA56D0034CEF4 /* config.cpp */,
-				F158AD6D291EA56D0034CEF4 /* config.hpp */,
 			);
 			path = SampleAppConsole;
 			sourceTree = "<group>";
@@ -122,8 +119,6 @@
 		F1958A29291C36E100CE7A3C /* unit_tests */ = {
 			isa = PBXGroup;
 			children = (
-				F1958A2A291C372000CE7A3C /* test_read_file.cpp */,
-				F1958A2B291C372000CE7A3C /* test_read_file.hpp */,
 				F158AD69291E7E080034CEF4 /* unit_tests.cpp */,
 				F158AD6A291E7E080034CEF4 /* unit_tests.hpp */,
 			);
@@ -191,7 +186,6 @@
 				F14C739128DB3EC80052019C /* main.cpp in Sources */,
 				F158AD53291E400E0034CEF4 /* tree.cpp in Sources */,
 				F158AD62291E40830034CEF4 /* menu.cpp in Sources */,
-				F1958A2C291C372000CE7A3C /* test_read_file.cpp in Sources */,
 				F158AD68291E40C40034CEF4 /* file_ops.cpp in Sources */,
 				F158AD5C291E40500034CEF4 /* text_ops.cpp in Sources */,
 				F158AD5F291E40640034CEF4 /* console_ops.cpp in Sources */,

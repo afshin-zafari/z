@@ -23,6 +23,7 @@ public:
     }
     void search(string word);
     string get_path_to_found();
+    string get_translation_for_found_items();
     void dump();
 };
 #endif /* forest_hpp */

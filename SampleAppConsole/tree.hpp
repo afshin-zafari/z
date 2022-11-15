@@ -49,6 +49,8 @@ public:
     void dump();
     void mark_as_found(int line_no, string word);
     int get_parent_line(int line_no);
+    void set_tree_no_in_forest(int no){tree_no_in_forest = no;}
+    string get_translation_for_found_items();
     
 };
 #endif /* tree_hpp */

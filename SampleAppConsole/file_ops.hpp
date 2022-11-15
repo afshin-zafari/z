@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <fstream>
 #include <string>
+#include <filesystem>
 
 #include "tree.hpp"
 #include "forest.hpp"
@@ -21,6 +22,7 @@ class FileManager{
 public:
     int read_file_to_tree(Tree &tree, string filename);
     int read_file_to_forest(Forest &f, string filename);
+    int read_folder_to_forest(Forest &f, string folder_name);
     
     
 };

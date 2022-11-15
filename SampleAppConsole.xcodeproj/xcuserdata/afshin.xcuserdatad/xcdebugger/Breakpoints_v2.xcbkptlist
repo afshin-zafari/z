@@ -7,32 +7,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EA3C60D0-1F48-4279-8551-9A969399781D"
-            shouldBeEnabled = "Yes"
+            uuid = "02BEAA27-918B-4AE5-8211-7A491CD50064"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "unit_tests/unit_tests.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "test_search_forest()"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "test_search()"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "42F2F08A-CDD3-4572-874B-0BFDDE94EDFF"
+            uuid = "2B90E6CA-AD1A-4101-A2F5-835E914F7606"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SampleAppConsole/tree.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "Tree::search(text)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8FD199C7-973A-46CA-AD7E-A1D90522C676"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SampleAppConsole/tree.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "Tree::search(word)"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "Tree::get_translation_for_found_items()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

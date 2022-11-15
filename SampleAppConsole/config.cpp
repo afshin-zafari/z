@@ -9,5 +9,5 @@
 string Config::default_folder = "";
 void Config::init(int argc, const char *argv[])
 {
-    default_folder = "/Users/afshin";
+    default_folder = "/Users/afshin/xcode-data";
 }
