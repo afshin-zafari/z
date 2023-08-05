@@ -4,6 +4,8 @@
 //
 //  Created by Afshin Zafari on 2022-11-11.
 //
+```mermaid
+```
 
 #include "config.hpp"
 string Config::default_folder = "";
